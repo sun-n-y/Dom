@@ -1,6 +1,6 @@
 //methods
 
-// //get elements by id
+// //get elements by id==========================================
 
 // //get acces to node object and assign variable then style it
 // const h1 = document.getElementById('title');
@@ -17,7 +17,7 @@
 // btn.style.backgroundColor = 'green';
 // btn.style.color = 'white';
 
-// // get elements based on tag name
+// // get elements based on tag name==================================
 
 // const headings = document.getElementsByTagName('h2');
 // // console.log(headings); //result is an html collection = array like object
@@ -36,18 +36,37 @@
 // console.log(items);
 // console.log(betterItems);
 
-//get elements based on class name
+// //get elements based on class name==================================
 
-const listItems = document.getElementsByClassName('special');
+// const listItems = document.getElementsByClassName('special');
 
-listItems[2].style.color = 'blue';
+// listItems[2].style.color = 'blue';
 
-console.log(listItems);
+// console.log(listItems);
 
-const better = [...listItems];
+// const better = [...listItems];
 
-better.forEach(function (item) {
+// better.forEach(function (item) {
+//   console.log(item);
+// });
+
+// console.log(better);
+
+// query selectors ====================================================
+
+const result = document.querySelector('#result');
+result.style.backgroundColor = 'blue';
+
+const item = document.querySelector('.special');
+// console.log(item);
+
+const lastItem = document.querySelector('li:last-child');
+// console.log(lastItem);
+
+const list = document.querySelectorAll('.special');
+console.log(list);
+
+list.forEach(function (item) {
   console.log(item);
+  item.style.color = 'yellow';
 });
-
-console.log(better);
