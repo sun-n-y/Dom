@@ -1,12 +1,21 @@
 // navigate the dom
 
-const result = document.querySelector('#result');
-const allChildern = result.childNodes;
+// //childern==================================================
+// const result = document.querySelector('#result');
+// const allChildern = result.childNodes;
 
-console.log(allChildern);
+// console.log(allChildern);
 
-const childern = result.children;
-console.log(childern);
+// const childern = result.children;
+// console.log(childern);
 
-console.log(result.firstChild);
-console.log(result.lastChild);
+// console.log(result.firstChild);
+// console.log(result.lastChild);
+
+//parent element
+
+const heading = document.querySelector('h2');
+
+const parent = heading.parentElement;
+
+parent.style.color = 'red';
