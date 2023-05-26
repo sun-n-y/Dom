@@ -22,14 +22,22 @@
 
 //sibling ====================================================
 
+// const first = document.querySelector('.first');
+
+// const second = (first.nextSibling.nextSibling.style.color = 'red');
+
+// console.log(second);
+
+// const last = document.querySelector('#last');
+
+// const third = (last.previousSibling.previousSibling.style.color = 'blue');
+
+// console.log(third);
+
+// element siblings ===========================================
+
 const first = document.querySelector('.first');
-
-const second = (first.nextSibling.nextSibling.style.color = 'red');
-
-console.log(second);
+first.nextElementSibling.style.color = 'red';
 
 const last = document.querySelector('#last');
-
-const third = (last.previousSibling.previousSibling.style.color = 'blue');
-
-console.log(third);
+last.previousElementSibling.style.color = 'red';
