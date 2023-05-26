@@ -12,10 +12,24 @@
 // console.log(result.firstChild);
 // console.log(result.lastChild);
 
-//parent element
+// //parent element============================================
 
-const heading = document.querySelector('h2');
+// const heading = document.querySelector('h2');
 
-const parent = heading.parentElement;
+// const parent = heading.parentElement;
 
-parent.style.color = 'red';
+// parent.style.color = 'red';
+
+//sibling ====================================================
+
+const first = document.querySelector('.first');
+
+const second = (first.nextSibling.nextSibling.style.color = 'red');
+
+console.log(second);
+
+const last = document.querySelector('#last');
+
+const third = (last.previousSibling.previousSibling.style.color = 'blue');
+
+console.log(third);
