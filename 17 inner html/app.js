@@ -12,7 +12,7 @@ console.log(list.innerHTML);
 
 //create list using innerhtml
 const ul = document.createElement('ul');
-// set to template string
+// set to template string- to add dynamic values
 ul.innerHTML = `<li class="item">list item</li>
 <li>list item</li>
 <li>${randomVar}</li>`;
